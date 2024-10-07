@@ -31,5 +31,30 @@ namespace AccesoDatos
                 return cliente;
             }
         }
+
+        public Customers ObtenerPorID(string id)
+        {
+            using (var conexion = DataBase.GetSqlConnection())
+            {
+
+                String sellectPorID = "";
+                sellectPorID = sellectPorID + "SELECT [CustomerID] " + "\n";
+                sellectPorID = sellectPorID + "      ,[CompanyName] " + "\n";
+                sellectPorID = sellectPorID + "      ,[ContactName] " + "\n";
+                sellectPorID = sellectPorID + "      ,[ContactTitle] " + "\n";
+                sellectPorID = sellectPorID + "      ,[Address] " + "\n";
+                sellectPorID = sellectPorID + "      ,[City] " + "\n";
+                sellectPorID = sellectPorID + "      ,[Region] " + "\n";
+                sellectPorID = sellectPorID + "      ,[PostalCode] " + "\n";
+                sellectPorID = sellectPorID + "      ,[Country] " + "\n";
+                sellectPorID = sellectPorID + "      ,[Phone] " + "\n";
+                sellectPorID = sellectPorID + "      ,[Fax] " + "\n";
+                sellectPorID = sellectPorID + "  FROM [dbo].[Customers] " + "\n";
+                sellectPorID = sellectPorID + "  WHERE CustomerID = @CustomerID";
+
+                var Cliente = conexion.QueryFirstOrDefault<Customers>(sellectPorID, new { CustomerID = id });
+                return Cliente;
+            }
+    }
     }
 }

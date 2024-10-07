@@ -19,7 +19,7 @@ namespace DapperDemo
             InitializeComponent();
         }
 
-     
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -29,7 +29,14 @@ namespace DapperDemo
         private void btnObtenerTodos_Click(object sender, EventArgs e)
         {
             var cliente = customerR.ObtenerTodos();
-            dgvCustomers.DataSource = cliente;  
+            dgvCustomers.DataSource = cliente;
+        }
+
+        private void btnObtenerId_Click(object sender, EventArgs e)
+        {
+            var cliente = customerR.ObtenerPorID(tboxObtenerID.Text);
+            dgvCustomers.DataSource = new List<Customers> { cliente };
         }
     }
 }
+
