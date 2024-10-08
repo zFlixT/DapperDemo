@@ -31,7 +31,7 @@
             this.dgvCustomers = new System.Windows.Forms.DataGridView();
             this.btnObtenerTodos = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.tboxObtenerID = new System.Windows.Forms.TextBox();
+            this.tboxOBtenerID = new System.Windows.Forms.TextBox();
             this.btnObtenerId = new System.Windows.Forms.Button();
             this.txbCustomerId = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,23 +44,24 @@
             this.txbAddress = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnInsertar = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvCustomers
             // 
             this.dgvCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCustomers.Location = new System.Drawing.Point(12, 12);
+            this.dgvCustomers.Location = new System.Drawing.Point(12, 13);
             this.dgvCustomers.Name = "dgvCustomers";
-            this.dgvCustomers.Size = new System.Drawing.Size(776, 207);
+            this.dgvCustomers.Size = new System.Drawing.Size(776, 223);
             this.dgvCustomers.TabIndex = 0;
             // 
             // btnObtenerTodos
             // 
             this.btnObtenerTodos.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnObtenerTodos.Location = new System.Drawing.Point(23, 463);
+            this.btnObtenerTodos.Location = new System.Drawing.Point(23, 476);
             this.btnObtenerTodos.Name = "btnObtenerTodos";
-            this.btnObtenerTodos.Size = new System.Drawing.Size(95, 34);
+            this.btnObtenerTodos.Size = new System.Drawing.Size(95, 37);
             this.btnObtenerTodos.TabIndex = 1;
             this.btnObtenerTodos.Text = "Obtener Todos";
             this.btnObtenerTodos.UseVisualStyleBackColor = true;
@@ -70,25 +71,25 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(20, 269);
+            this.label1.Location = new System.Drawing.Point(12, 266);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 14);
             this.label1.TabIndex = 2;
             this.label1.Text = "Id Cliente";
             // 
-            // tboxObtenerID
+            // tboxOBtenerID
             // 
-            this.tboxObtenerID.Location = new System.Drawing.Point(77, 266);
-            this.tboxObtenerID.Name = "tboxObtenerID";
-            this.tboxObtenerID.Size = new System.Drawing.Size(100, 20);
-            this.tboxObtenerID.TabIndex = 3;
+            this.tboxOBtenerID.Location = new System.Drawing.Point(69, 263);
+            this.tboxOBtenerID.Name = "tboxOBtenerID";
+            this.tboxOBtenerID.Size = new System.Drawing.Size(100, 20);
+            this.tboxOBtenerID.TabIndex = 3;
             // 
             // btnObtenerId
             // 
             this.btnObtenerId.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnObtenerId.Location = new System.Drawing.Point(197, 266);
+            this.btnObtenerId.Location = new System.Drawing.Point(189, 263);
             this.btnObtenerId.Name = "btnObtenerId";
-            this.btnObtenerId.Size = new System.Drawing.Size(92, 23);
+            this.btnObtenerId.Size = new System.Drawing.Size(92, 25);
             this.btnObtenerId.TabIndex = 4;
             this.btnObtenerId.Text = "Buscar";
             this.btnObtenerId.UseVisualStyleBackColor = true;
@@ -96,7 +97,7 @@
             // 
             // txbCustomerId
             // 
-            this.txbCustomerId.Location = new System.Drawing.Point(688, 266);
+            this.txbCustomerId.Location = new System.Drawing.Point(667, 262);
             this.txbCustomerId.Name = "txbCustomerId";
             this.txbCustomerId.Size = new System.Drawing.Size(100, 20);
             this.txbCustomerId.TabIndex = 6;
@@ -105,7 +106,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(597, 269);
+            this.label2.Location = new System.Drawing.Point(569, 269);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 14);
             this.label2.TabIndex = 5;
@@ -113,7 +114,7 @@
             // 
             // txbCompanyName
             // 
-            this.txbCompanyName.Location = new System.Drawing.Point(688, 306);
+            this.txbCompanyName.Location = new System.Drawing.Point(667, 302);
             this.txbCompanyName.Name = "txbCompanyName";
             this.txbCompanyName.Size = new System.Drawing.Size(100, 20);
             this.txbCompanyName.TabIndex = 8;
@@ -122,7 +123,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(597, 306);
+            this.label3.Location = new System.Drawing.Point(569, 305);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 14);
             this.label3.TabIndex = 7;
@@ -130,7 +131,7 @@
             // 
             // tbxContactTitle
             // 
-            this.tbxContactTitle.Location = new System.Drawing.Point(688, 383);
+            this.tbxContactTitle.Location = new System.Drawing.Point(667, 383);
             this.tbxContactTitle.Name = "tbxContactTitle";
             this.tbxContactTitle.Size = new System.Drawing.Size(100, 20);
             this.tbxContactTitle.TabIndex = 10;
@@ -139,7 +140,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(597, 346);
+            this.label4.Location = new System.Drawing.Point(569, 346);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 14);
             this.label4.TabIndex = 9;
@@ -148,7 +149,7 @@
             // 
             // txbContactName
             // 
-            this.txbContactName.Location = new System.Drawing.Point(688, 343);
+            this.txbContactName.Location = new System.Drawing.Point(667, 342);
             this.txbContactName.Name = "txbContactName";
             this.txbContactName.Size = new System.Drawing.Size(100, 20);
             this.txbContactName.TabIndex = 12;
@@ -157,7 +158,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(597, 386);
+            this.label5.Location = new System.Drawing.Point(569, 387);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(66, 14);
             this.label5.TabIndex = 11;
@@ -166,7 +167,7 @@
             // 
             // txbAddress
             // 
-            this.txbAddress.Location = new System.Drawing.Point(688, 423);
+            this.txbAddress.Location = new System.Drawing.Point(667, 417);
             this.txbAddress.Name = "txbAddress";
             this.txbAddress.Size = new System.Drawing.Size(100, 20);
             this.txbAddress.TabIndex = 14;
@@ -175,7 +176,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(597, 423);
+            this.label6.Location = new System.Drawing.Point(569, 424);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 14);
             this.label6.TabIndex = 13;
@@ -185,19 +186,31 @@
             // btnInsertar
             // 
             this.btnInsertar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsertar.Location = new System.Drawing.Point(693, 463);
+            this.btnInsertar.Location = new System.Drawing.Point(672, 459);
             this.btnInsertar.Name = "btnInsertar";
-            this.btnInsertar.Size = new System.Drawing.Size(95, 34);
+            this.btnInsertar.Size = new System.Drawing.Size(95, 37);
             this.btnInsertar.TabIndex = 15;
             this.btnInsertar.Text = "Insertar cliente ";
             this.btnInsertar.UseVisualStyleBackColor = true;
             this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
             // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.Location = new System.Drawing.Point(672, 518);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(95, 37);
+            this.btnActualizar.TabIndex = 16;
+            this.btnActualizar.Text = "Actualizar.";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(816, 527);
+            this.ClientSize = new System.Drawing.Size(816, 568);
+            this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnInsertar);
             this.Controls.Add(this.txbAddress);
             this.Controls.Add(this.label6);
@@ -210,10 +223,11 @@
             this.Controls.Add(this.txbCustomerId);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnObtenerId);
-            this.Controls.Add(this.tboxObtenerID);
+            this.Controls.Add(this.tboxOBtenerID);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnObtenerTodos);
             this.Controls.Add(this.dgvCustomers);
+            this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -228,7 +242,7 @@
         private System.Windows.Forms.DataGridView dgvCustomers;
         private System.Windows.Forms.Button btnObtenerTodos;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tboxObtenerID;
+        private System.Windows.Forms.TextBox tboxOBtenerID;
         private System.Windows.Forms.Button btnObtenerId;
         private System.Windows.Forms.TextBox txbCustomerId;
         private System.Windows.Forms.Label label2;
@@ -241,6 +255,7 @@
         private System.Windows.Forms.TextBox txbAddress;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnInsertar;
+        private System.Windows.Forms.Button btnActualizar;
     }
 }
 
