@@ -17,10 +17,12 @@ namespace AccesoDatos
             }
         }
         public static SqlConnection GetSqlConnection() {
-
-           SqlConnection conexion = new SqlConnection(ConnectionString);
+            SqlConnection conexion = new SqlConnection(ConnectionString);
             conexion.Open();
             return conexion;
+           ///SqlConnection conexion = new SqlConnection(ConnectionString);
+            ////conexion.Open();
+            ///return conexion;
         }
     }
 }

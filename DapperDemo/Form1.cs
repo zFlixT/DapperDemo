@@ -34,7 +34,7 @@ namespace DapperDemo
 
         private void btnObtenerId_Click(object sender, EventArgs e)
         {
-            var cliente = customerR.ObtenerPorID(tboxOBtenerID.Text);
+            var cliente = customerR.ObtenerPorID(tboxObtenerID.Text);
              dgvCustomers.DataSource = new List<Customers> { cliente };
 
             if (cliente != null) {
@@ -90,6 +90,12 @@ namespace DapperDemo
 
             MessageBox.Show($"filas actualizadas {actualizados} , {clienteActualizado.CustomerID}");
 
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            var eliminadas = customerR.EliminarCliente(tboxObtenerID.Text);
+            MessageBox.Show($"Se ha eliminado {eliminadas} filas de manera correcta");
         }
     }
 }
